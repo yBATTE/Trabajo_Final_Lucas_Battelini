@@ -1,0 +1,283 @@
+/* Default/Reset */
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Montserrat', sans-serif;   
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #e1e2e1;
+    min-height: 100%;
+}
+.logo__inicio{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 3rem;
+    margin-left: 75rem;
+    font-weight: 300;
+}
+
+.header__nav{
+    padding-left: 85rem;
+}
+.logo{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 3rem;
+}
+
+
+.header__nosotros,.header__contacto,.header__noticias,.header__consejos{
+    font-style: none;
+    color: #ffffff;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+    display: inline;
+}
+.logo__bold__incio{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+.header__frase{
+display: inline-block;
+padding-left: 5rem;
+margin-top: 20rem;
+font-weight: 900;
+
+}
+
+
+footer{
+    margin-top: auto;
+}
+.footer__logo{
+    font-size: 3rem;
+    font-weight: 300;
+    margin-left: 5px;
+    padding-top: 1rem;
+}
+.footer__nav__nosotros{
+    text-decoration: none;
+    color: #ffffff;
+    
+}
+.footer__nav__contacto{
+text-decoration: none;
+color: #ffffff;
+}
+.footer__nav__noticias{
+    text-decoration: none;
+    color: #ffffff;
+    }
+    
+
+
+
+.contenedor{
+    padding-bottom: 0,4rem;
+    background-color: #000000;
+
+}
+.logo__bold{
+    font-weight: 700;
+}
+/**Contacto**/
+
+
+.header__div__contacto{
+    padding-bottom: 2rem;
+}
+.logo__inicio__contacto{
+    color: #faf5f5;
+    text-decoration: none;
+    font-size: 3rem;
+    margin-left: 75rem;
+    font-weight: 300;
+    color: orange;
+}
+.logo__bold__incio__contacto{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.header__nav__contacto{
+    padding-left: 85rem;
+}
+.header__nosotros__contacto,.header__contacto__contacto,.header__noticias__contacto{
+    font-style: none;
+    color: orange;
+    text-decoration: none;}
+
+.contacto__logo__contacto{
+    display: inline-block;
+    color: orange;
+    text-decoration: none;
+    padding-left: 47rem;
+    margin-top: 10rem;
+    font-size: 5rem;
+}
+.parrafo__logo__contacto{
+    color: white;
+    padding-left: 48.5rem;
+    margin-top: 2rem;
+}
+/*NOSOTROS*/
+
+.header__div__nosotros{
+    margin-bottom: 2rem;
+}
+    
+    .contacto__logo__nosotros{
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        padding-left: 47rem;
+        margin-top: 10rem;
+        font-size: 5rem; 
+    }
+.parrafo__logo__nosotros{
+    color: white;
+    margin-bottom: 13rem;
+    background-color: hsla(0, 0%, 0%, 0.466);
+}
+
+.fondo{
+    background-image: url(../../imagenes/Red-Bull-Racing-F14.jpg);
+    
+}
+
+.fondo__contacto{
+    background-image: url(../../imagenes/ea60bf7c4a272dc48155da379de73fc7.jpg);
+
+}
+
+.formulario__contacto{
+    background-color: #00000070;
+    display: block;
+    margin-left: 52rem;
+    padding-bottom: 20rem;
+
+}
+
+.forms__color{
+    color: white;
+}
+
+.fondo__index{
+    background-image: url(../../imagenes/thumb-1920-447698.jpg) ;
+}
+
+.video__index{
+    display: block;
+    margin-bottom: 5rem ;
+    margin-left: 5rem;
+    margin-top: 2rem;
+}
+
+/*NOTICIAS*/
+.fondo__noticias{
+    background-image: url(../../imagenes/67214.jpg);
+}
+.header__div__noticias{
+    padding-bottom: 20rem;
+}
+.header__contacto__noticias,.header__noticias__noticias,.header__nosotros__noticias,.header__consejos__noticias{
+    text-decoration: none;
+    color: orange;
+    font-weight: 700;
+}
+.logo__inicio__noticia{
+    color: orange;
+    text-decoration: none;
+    font-size: 3rem;
+    margin-left: 75rem;
+    font-weight: 300;
+}
+.primer_noticias{
+    display: inline-block;
+    margin-left: 2rem;
+}
+.noticia__amarok {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+    }
+    
+    .noticia__amarok__texto { grid-area: 1 / 1 / 2 / 2;
+    color: #ffffff;
+    font-size: 500;
+    background-color: #00000065;
+
+    }
+    .noticia__amarok__imagen { grid-area: 1 / 2 / 2 / 3; 
+    padding-left: 3rem ;
+    width: 200px;
+}
+
+
+/*CONSEJOS*/
+
+    .limpieza__auto {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 0px;
+        margin-top: 10rem;
+        }
+        
+        .texto__limpieza__auto { grid-area: 1 / 1 / 2 / 2; 
+        }
+        .imagen__limpieza__auto { grid-area: 1 / 2 / 2 / 3; 
+        }
+
+        .header__nosotros__consejos,.header__contacto__consejos,.header__noticias__consejos,.header__consejos__consejos{
+            font-style: none;
+            color: #000000;
+            text-decoration: none;
+        }
+
+        .logo__inicio__consejos{
+            color: #000000;
+            text-decoration: none;
+            font-size: 3rem;
+            margin-left: 75rem;
+            font-weight: 300;
+        }
+
+        /*hasta 320*/
+@media screen and (max-width: 768px) {
+
+.header__div{
+    display: flex;
+    flex-direction: column;
+}
+.logo__inicio{
+    margin-left: 3rem;   
+}
+.header__nav{
+    margin-left: 10rem ;
+    padding: 0rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+
+.header__frase{
+margin-top: 2rem;
+margin-right: 1rem;
+}
+
+}
+
