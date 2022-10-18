@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../estilos/css/Style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <div class="fondo__contacto">
@@ -32,24 +33,26 @@
                     <div>
                         <div>
                             <label class="forms__color" for="name">Nombre:</label>
-                            <input type="text" name="name" id="name" required placeholder="Introduzca su nombre">
+                            <input class="hola" type="text" name="name" id="name" required placeholder="Introduzca su nombre">
                         </div>
                         <div>
                             <label class="forms__color" for="Apellido">Apellido:</label>
-                            <input type="text" name="Apellido" id="Apellido" required placeholder="Introduzca su nombre">
+                            <input class="hola" type="text" name="Apellido" id="Apellido" required placeholder="Introduzca su nombre">
                         <div>
                             <label class="forms__color" for="mail">Correo Electronico:</label>
-                            <input type="email" name="mail" id="mail" required placeholder="Introducir su correo">
+                            <input class="hola" type="email" name="mail" id="mail" required placeholder="Introducir su correo">
                         </div>
                         <div>
                             <label class="forms__color" for="conslta">Consulta:</label>
-                            <input type="consulta" name="name" id="consulta" required placeholder="Introduzca su consulta">
+                            <input class="form__consulta" type="consulta" name="name" id="consulta" required placeholder="Introduzca su consulta">
                         </div>
-                        <input type="submit" value="Enviar">
+                        <br>
+                        <input class="hola" type="submit" value="Enviar">
                     </form> 
                 </div>
             </section>
         </main>
+        <br>
     </div>
         <footer class="footer">
             <div class="contenedor">
@@ -66,4 +69,5 @@
             </div>
         </footer>
     </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </html>
