@@ -1,0 +1,5 @@
+para usar la extension  
+se crea todo solo
+
+para usar la terminal
+new termina npm run watch-css
