@@ -1,0 +1,21 @@
+.logo__inicio__consejos{
+    color: #000000;
+    text-decoration: none;
+    font-size: 3rem;
+    margin-left: 75rem;
+    font-weight: 300;
+}
+.limpieza__auto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+    margin-top: 10rem;
+    }
+    .texto__limpieza__auto { 
+        grid-area: 1 / 1 / 2 / 2;
+        margin-left: 1rem;
+    }
+    .imagen__limpieza__auto { grid-area: 1 / 2 / 2 / 3; 
+    }
