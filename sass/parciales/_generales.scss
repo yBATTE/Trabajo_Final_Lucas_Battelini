@@ -13,6 +13,20 @@ body{
     font-size: 3rem;
     margin-left: 75rem;
     font-weight: 300;
+
+    @include mobile{
+        display: flex;
+        justify-content: center;
+        margin: 1rem;
+        font-size: 45px;
+    }
+
+    @include laptop{
+        display: flex;
+        justify-content: center;
+        margin: 1rem;
+        font-size: 45px;
+    }
 }
 .header__nav{
     margin-left: 80rem;
@@ -40,6 +54,17 @@ footer{
     padding-top: 1rem;
     content: auto;
     transition: 0.5s;
+
+    @include mobile{
+        display: flex;
+        justify-content: center;
+        font-size: 40px;
+    }
+
+    @include laptop{
+        display: flex;
+        justify-content: center;
+    }
 }
 .footer__logo:hover{
     color: #e65454;
@@ -82,7 +107,7 @@ transition: 0.5s
     font-weight: 700;
 }
 .hover_animation{
-    margin-top: 1rem;
+    margin-top: 0rem;
     position: relative;
     display: inline-block;
     text-decoration: none;
