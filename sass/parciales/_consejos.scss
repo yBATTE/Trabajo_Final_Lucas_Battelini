@@ -21,6 +21,15 @@
     grid-row-gap: 0px;
     margin-top: 10rem;
 
+    @include mobileL{
+        display: flex;
+        flex-direction: column;
+    }
+
+    @include mobileM{
+        display: flex;
+        flex-direction: column;
+    }
 
     @include mobile{
         display: flex;
@@ -30,6 +39,11 @@
     .texto__limpieza__auto { 
         grid-area: 1 / 1 / 2 / 2;
         margin-left: 1rem;
+
+        @include mobile{
+            font-size: 15px;
+        }
+
     }
     .imagen__limpieza__auto { grid-area: 1 / 2 / 2 / 3; 
 
@@ -51,6 +65,7 @@
 
 .img1{
 
+
     @include laptop{
     width: 400px;
     height: 200px;
@@ -60,4 +75,52 @@
     width: 300px;
     height: 200px;
 }
+
+
+@include mobileL{
+    width: 250px;
+    height: 200px; 
+    margin: 2rem;
+}
+@include mobileM{
+    width: 250px;
+    height: 200px; 
+    margin: 2rem;
+}
+@include mobile{
+    width: 250px;
+    height: 200px; 
+    margin: 2rem;
+}
+}
+
+
+.header__nav__consejos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: end;
+    margin-right: 2rem;
+
+
+    @include mobileL{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    @include mobileM{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @include mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }

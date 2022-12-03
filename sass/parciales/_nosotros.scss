@@ -20,6 +20,13 @@
         justify-content: center;
     }
 
+    @include mobileL{
+        font-size: 50px;
+    }
+    @include mobileM{
+        font-size: 40px;
+    }
+
     @include mobile{
         font-size: 30px;
     }

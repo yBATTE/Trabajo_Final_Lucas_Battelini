@@ -1,6 +1,6 @@
 .fondo__contacto{
     background-image: url(../../imagenes/ea60bf7c4a272dc48155da379de73fc7.jpg);
-    padding-bottom: 8rem;
+    padding-bottom: 10rem;
 }
 
 .formulario__contacto{
@@ -26,7 +26,15 @@
     align-items: center;
     border: 3px rgb(0, 0, 0) solid;
     border-radius: 25px;
-
+    
+    @include mobileL{
+        height: 300px;
+        width: 400px;
+    }
+    @include mobileM{
+        height: 100px;
+        width: 200px;
+    }
     @include mobile{
         height: 100px;
         width: 200px;
@@ -59,9 +67,19 @@
     text-decoration: none;
     font-size: 5rem;
 
+    @include mobileL{
+        font-size: 50px;
+    }
+    @include mobileM{
+        font-size: 40px; 
+    }
+
+
     @include mobile{
         font-size: 40px;
     }
+
+
 }
 .parrafo__logo__contacto{
     display: flex;

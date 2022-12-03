@@ -15,10 +15,12 @@ body {
   min-height: 100%; }
 
 .logo__inicio {
+  display: flex;
+  justify-content: end;
+  margin-right: 5rem;
   color: #ffffff;
   text-decoration: none;
   font-size: 3rem;
-  margin-left: 75rem;
   font-weight: 300; }
   @media screen and (max-width: 320px) {
     .logo__inicio {
@@ -34,7 +36,9 @@ body {
       font-size: 45px; } }
 
 .header__nav {
-  margin-left: 80rem; }
+  display: flex;
+  justify-content: end;
+  margin-right: 10rem; }
 
 .logo {
   color: white;
@@ -136,7 +140,7 @@ footer {
 .fondo__index {
   background-image: url(../../imagenes/thumb-1920-447698.jpg);
   margin: 0%;
-  padding-bottom: 5.05rem;
+  padding-bottom: 5.5rem;
   background-size: cover;
   background-position: center; }
 
@@ -153,6 +157,14 @@ footer {
     .video__index {
       width: 700px;
       height: 600px; } }
+  @media screen and (max-width: 425px) {
+    .video__index {
+      width: 350px;
+      height: 330px; } }
+  @media screen and (max-width: 375px) {
+    .video__index {
+      width: 300px;
+      height: 300px; } }
   @media screen and (max-width: 320px) {
     .video__index {
       width: 200px;
@@ -250,6 +262,17 @@ footer {
   grid-template-rows: 1fr;
   grid-column-gap: 20px;
   grid-row-gap: 0px; }
+  @media screen and (max-width: 1024px) {
+    .noticia__amarok {
+      margin-bottom: 10rem; } }
+  @media screen and (max-width: 425px) {
+    .noticia__amarok {
+      display: flex;
+      flex-direction: column; } }
+  @media screen and (max-width: 375px) {
+    .noticia__amarok {
+      display: flex;
+      flex-direction: column; } }
   @media screen and (max-width: 320px) {
     .noticia__amarok {
       display: flex;
@@ -257,12 +280,16 @@ footer {
 
 .noticia__amarok__texto {
   grid-area: 1 / 1 / 2 / 2;
+  margin: 1rem;
   color: #ffffff;
   font-size: 500;
   background-color: #00000065; }
   @media screen and (max-width: 1024px) {
     .noticia__amarok__texto {
       margin: 1rem; } }
+  @media screen and (max-width: 768px) {
+    .noticia__amarok__texto {
+      margin-bottom: 11rem; } }
 
 .noticia__amarok__imagen {
   grid-area: 1 / 2 / 2 / 3;
@@ -274,9 +301,24 @@ footer {
       width: 100px;
       height: 10px;
       position: relative; } }
+  @media screen and (max-width: 425px) {
+    .noticia__amarok__imagen {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      margin-left: 2rem; } }
+  @media screen and (max-width: 375px) {
+    .noticia__amarok__imagen {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      margin-left: 2rem; } }
   @media screen and (max-width: 320px) {
     .noticia__amarok__imagen {
-      display: flex; } }
+      display: flex;
+      margin: 0;
+      padding: 0;
+      margin-left: 2rem; } }
 
 @media screen and (max-width: 1024px) {
   .fotter__menu {
@@ -287,18 +329,24 @@ footer {
 
 @media screen and (max-width: 1024px) {
   .footer__logo2 {
-    margin: 1rem;
+    margin: 0.5rem;
     display: flex;
     flex-direction: column;
     align-items: center; } }
 
 .contenedor2 {
   background-color: #000000;
-  padding-bottom: 0.7rem; }
+  padding-bottom: 2rem; }
   @media screen and (max-width: 1024px) {
     .contenedor2 {
       background-color: #000000;
-      padding-bottom: 0.7rem; } }
+      padding-bottom: 2rem; } }
+  @media screen and (max-width: 425px) {
+    .contenedor2 {
+      margin-top: 15rem; } }
+  @media screen and (max-width: 375px) {
+    .contenedor2 {
+      margin-top: 15rem; } }
   @media screen and (max-width: 320px) {
     .contenedor2 {
       margin-top: 15rem; } }
@@ -315,7 +363,13 @@ footer {
 
 @media screen and (max-width: 320px) {
   .img2 {
-    display: flex; } }
+    display: flex;
+    padding-right: 5rem; } }
+
+.logo22 {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem; }
 
 .fondo {
   background-image: url(../../imagenes/Red-Bull-Racing-F14.jpg); }
@@ -336,6 +390,12 @@ footer {
       margin: 0%;
       display: flex;
       justify-content: center; } }
+  @media screen and (max-width: 425px) {
+    .contacto__logo__nosotros {
+      font-size: 50px; } }
+  @media screen and (max-width: 375px) {
+    .contacto__logo__nosotros {
+      font-size: 40px; } }
   @media screen and (max-width: 320px) {
     .contacto__logo__nosotros {
       font-size: 30px; } }
@@ -376,6 +436,14 @@ footer {
   grid-column-gap: 20px;
   grid-row-gap: 0px;
   margin-top: 10rem; }
+  @media screen and (max-width: 425px) {
+    .limpieza__auto {
+      display: flex;
+      flex-direction: column; } }
+  @media screen and (max-width: 375px) {
+    .limpieza__auto {
+      display: flex;
+      flex-direction: column; } }
   @media screen and (max-width: 320px) {
     .limpieza__auto {
       display: flex;
@@ -384,6 +452,9 @@ footer {
 .texto__limpieza__auto {
   grid-area: 1 / 1 / 2 / 2;
   margin-left: 1rem; }
+  @media screen and (max-width: 320px) {
+    .texto__limpieza__auto {
+      font-size: 15px; } }
 
 .imagen__limpieza__auto {
   grid-area: 1 / 2 / 2 / 3; }
@@ -409,9 +480,52 @@ footer {
     width: 300px;
     height: 200px; } }
 
+@media screen and (max-width: 425px) {
+  .img1 {
+    width: 250px;
+    height: 200px;
+    margin: 2rem; } }
+
+@media screen and (max-width: 375px) {
+  .img1 {
+    width: 250px;
+    height: 200px;
+    margin: 2rem; } }
+
+@media screen and (max-width: 320px) {
+  .img1 {
+    width: 250px;
+    height: 200px;
+    margin: 2rem; } }
+
+.header__nav__consejos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: end;
+  margin-right: 2rem; }
+  @media screen and (max-width: 425px) {
+    .header__nav__consejos {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
+  @media screen and (max-width: 375px) {
+    .header__nav__consejos {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
+  @media screen and (max-width: 320px) {
+    .header__nav__consejos {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
+
 .fondo__contacto {
   background-image: url(../../imagenes/ea60bf7c4a272dc48155da379de73fc7.jpg);
-  padding-bottom: 8rem; }
+  padding-bottom: 10rem; }
 
 .formulario__contacto {
   display: flex;
@@ -435,6 +549,14 @@ footer {
   align-items: center;
   border: 3px black solid;
   border-radius: 25px; }
+  @media screen and (max-width: 425px) {
+    .form__consulta {
+      height: 300px;
+      width: 400px; } }
+  @media screen and (max-width: 375px) {
+    .form__consulta {
+      height: 100px;
+      width: 200px; } }
   @media screen and (max-width: 320px) {
     .form__consulta {
       height: 100px;
@@ -463,6 +585,12 @@ footer {
   color: orange;
   text-decoration: none;
   font-size: 5rem; }
+  @media screen and (max-width: 425px) {
+    .contacto__logo__contacto {
+      font-size: 50px; } }
+  @media screen and (max-width: 375px) {
+    .contacto__logo__contacto {
+      font-size: 40px; } }
   @media screen and (max-width: 320px) {
     .contacto__logo__contacto {
       font-size: 40px; } }

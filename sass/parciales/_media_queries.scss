@@ -3,6 +3,16 @@
         @content;
     }
 }
+@mixin mobileM {
+    @media screen and (max-width: 375px) {
+        @content;
+    }
+}
+@mixin mobileL {
+    @media screen and (max-width: 425px) {
+    @content;
+}
+}
 @mixin tablet {
     @media screen and (max-width: 768px) {
         @content;
@@ -13,3 +23,5 @@
         @content;
     }
 }
+
+

@@ -2,9 +2,10 @@
 .fondo__index{
     background-image: url(../../imagenes/thumb-1920-447698.jpg) ;
     margin: 0%;
-    padding-bottom: 5.05rem;
+    padding-bottom: 5.5rem;
     background-size: cover;
     background-position: center;}
+
 .video__index{
     margin-left: 2rem;
     margin-top: 2rem;
@@ -19,11 +20,19 @@
         width: 700px;
         height: 600px;
     }
+    @include mobileL{
+        width: 350px;
+        height: 330px;
+    }
+
+    @include mobileM{
+        width: 300px;
+        height: 300px;
+    }
     @include mobile{
         width: 200px;
         height: 300px;
     }
-
 }
 
 
