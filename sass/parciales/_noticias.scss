@@ -1,20 +1,43 @@
 .fondo__noticias{
     background-image: url(../../imagenes/67214.jpg);
+
 }
     .header__div__noticias{
-        padding-bottom: 20rem;
-
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
 
         @include laptop{
-            padding: 0%;
-            margin: 2rem;
+            flex-direction: column;
         }
+    
+    
+        @include tablet{
+            flex-direction: column;
+        }
+    
+        @include mobileL{
+            flex-direction: column;
+        }
+    
+    
+    
+        @include mobileM{
+            flex-direction: column;
+        }
+    
+    
+        @include mobile{
+            flex-direction: column;
+        }
+
     }
+    
     .logo__inicio__noticia{
-        color: orange;
+        color: rgb(255, 255, 255);
         text-decoration: none;
         font-size: 3rem;
-        margin-left: 75rem;
+        margin-left: 5rem;
         font-weight: 300;
 
         @include laptop{
@@ -30,6 +53,8 @@
         grid-template-rows: 1fr;
         grid-column-gap: 20px;
         grid-row-gap: 0px;
+        margin-top: 8rem;
+        margin-bottom: 15rem;
 
         @include laptop{
         margin-bottom: 10rem;
@@ -37,16 +62,19 @@
 
 
         @include mobileL{
+            margin: 0;
             display: flex;
             flex-direction: column;
         }
 
         @include mobileM{
+            margin: 0;
             display: flex;
             flex-direction: column;
         }
 
         @include mobile{
+            margin: 0;
             display: flex;
             flex-direction: column;
         }
@@ -64,6 +92,18 @@
             }
             @include tablet{
                 margin-bottom: 11rem;
+            }
+
+            @include mobileL{
+                margin-bottom: 1rem;
+            }
+
+            @include mobileM{
+                margin-bottom: 1rem;
+            }
+
+            @include mobile{
+                margin: 1rem;
             }
         
             }
@@ -84,19 +124,20 @@
                     margin: 0;
                     padding: 0;
                     margin-left: 2rem;
+                    margin-bottom: 14rem;
                 }
 
 
                 @include mobileM{
                     display: flex;
-                    margin: 0;
+                    margin-bottom: 14rem;
                     padding: 0;
                     margin-left: 2rem;
                 }
 
                 @include mobile{
                     display: flex;
-                    margin: 0;
+                    margin-bottom: 14rem;
                     padding: 0;
                     margin-left: 2rem;
                 }
@@ -124,7 +165,10 @@
 }
 .contenedor2{   
     background-color: #000000;
-    padding-bottom: 2rem;
+    display: flex;
+    padding: 4rem;
+    justify-content: space-between;
+    align-items: center;
 
 
     @include laptop{
@@ -132,8 +176,13 @@
             padding-bottom: 2rem;
     }
 
+
+    @include tablet{
+        flex-direction: column;
+    }
     @include mobileL{
         margin-top: 15rem;
+        flex-direction: column;
     }
 
     @include mobileM{
@@ -166,3 +215,4 @@
     text-decoration: none;
     font-size: 2rem;
 }
+

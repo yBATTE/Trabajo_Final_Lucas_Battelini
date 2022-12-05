@@ -1,7 +1,7 @@
 
 .fondo__index{
     background-image: url(../../imagenes/thumb-1920-447698.jpg) ;
-    margin: 0%;
+    margin: 0;
     padding-bottom: 5.5rem;
     background-size: cover;
     background-position: center;}
@@ -107,6 +107,42 @@
         flex-direction: column;
         font-size: 20px;
     }
-
 }
 
+.index__section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.logo_fotter_index{
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+
+
+    @include laptop{
+        flex-direction: column;
+    }
+
+
+    @include tablet{
+        flex-direction: column;
+    }
+
+    @include mobileL{
+        flex-direction: column;
+    }
+
+
+
+    @include mobileM{
+        flex-direction: column;
+    }
+
+
+    @include mobile{
+        flex-direction: column;
+    }
+    }

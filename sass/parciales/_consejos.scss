@@ -2,7 +2,7 @@
     color: #000000;
     text-decoration: none;
     font-size: 3rem;
-    margin-left: 75rem;
+    margin-left: 5rem;
     font-weight: 300;
 
     @include laptop{
@@ -20,6 +20,10 @@
     grid-column-gap: 20px;
     grid-row-gap: 0px;
     margin-top: 10rem;
+
+    @include tablet{
+        flex-direction: column;
+    }
 
     @include mobileL{
         display: flex;
@@ -39,9 +43,18 @@
     .texto__limpieza__auto { 
         grid-area: 1 / 1 / 2 / 2;
         margin-left: 1rem;
+        margin-bottom: 20rem;
+
+        @include mobileL{
+            margin-bottom: 1rem;
+        }
+        @include mobileM{
+            margin-bottom: 1rem;
+        }
 
         @include mobile{
             font-size: 15px;
+            margin-bottom: 1rem;
         }
 
     }
@@ -50,6 +63,16 @@
         @include laptop{
         width: 100px;
         height: 200px;
+        }
+
+        @include mobileL{
+            margin-bottom: 3rem;
+        }
+        @include mobileM{
+            margin-bottom: 3rem;
+        }
+        @include mobile{
+            margin-bottom: 3rem;
         }
     }
 
@@ -99,8 +122,18 @@
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    justify-content: end;
-    margin-right: 2rem;
+    margin-right: 1rem;
+    margin-top: 2rem;
+
+    @include laptop{
+        justify-content: center;
+    }
+
+    @include tablet{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
 
     @include mobileL{
